@@ -12,12 +12,11 @@ public class AboutMyself {
         int birthYear = 1992;
         int age;
 
-
         age = thisYear - birthYear;
 
         System.out.println(firstName + "\u0020" + lastName);
-        System.out.println(firstName + " " + lastName);
         System.out.println(age);
+
 
 
     }
