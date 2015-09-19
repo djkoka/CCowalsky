@@ -15,6 +15,9 @@ public class AboutMyself {
         age = thisYear - birthYear;
 
         System.out.println(firstName + "\u0020" + lastName);
+        System.out.print(firstName);
+        System.out.print(" ");
+        System.out.println(lastName);
         System.out.println(age);
 
 
