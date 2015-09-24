@@ -25,6 +25,18 @@ public class DataType {
         float f = 2.5F;
 
 
+        boolean boal = true;
+        boal = false;
+
+
+        char c = 'h';
+
+        byte dfs = 125;
+
+
+
+
+
 
 
 
