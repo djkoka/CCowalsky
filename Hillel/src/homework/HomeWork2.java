@@ -15,13 +15,13 @@ public class HomeWork2 {
         Scanner scanner = new Scanner(System.in);
         int program = scanner.nextInt();
         if (program == 1) {
-            TestEvenNumber();
+            testEvenNumber();
             System.out.println('\n');
         } else if (program == 2) {
-            SoClose();
+            soClose();
             System.out.println('\n');
         } else if (program == 3) {
-            Rectangle();
+            rectangle();
             System.out.println('\n');
         } else {
             System.out.println("Error select program.");
@@ -29,7 +29,7 @@ public class HomeWork2 {
 
     }
 
-    public static void TestEvenNumber() {
+    public static void testEvenNumber() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter number for check: ");
         int number = scanner.nextInt();
@@ -39,7 +39,7 @@ public class HomeWork2 {
         } else System.out.println("Odd");
     }
 
-    public static void SoClose() {
+    public static void soClose() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter first number: ");
         int fistNumber = scanner.nextInt();
@@ -65,17 +65,17 @@ public class HomeWork2 {
 
     }
 
-    public static void Rectangle() {
+    public static void rectangle() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter Area(S): ");
-        double S = scanner.nextInt();
+        double s = scanner.nextInt();
         System.out.print("Enter Perimeter(P): ");
-        double P = scanner.nextInt();
+        double p = scanner.nextInt();
 
         double a, b, c;
         a = 1;
-        b = P / 2;
-        c = S;
+        b = p / 2;
+        c = s;
 
         double d = b * b - 4 * a * c;
 
@@ -87,8 +87,8 @@ public class HomeWork2 {
         } else {
             double x1 = (-b + Math.sqrt(d)) / (2 * a);
             double x2 = (-b - Math.sqrt(d)) / (2 * a);
-            System.out.println("Side A = " + x1 * -1);
-            System.out.println("Side B = " + x2 * -1);
+            System.out.println("Side A = " + Math.abs(x1));
+            System.out.println("Side B = " + Math.abs(x2));
         }
     }
 
