@@ -68,16 +68,16 @@ public class HomeWork2 {
     public static void rectangle() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter Area(S): ");
-        double s = scanner.nextInt();
+        double s = scanner.nextDouble();
         System.out.print("Enter Perimeter(P): ");
-        double p = scanner.nextInt();
+        double p = scanner.nextDouble();
 
         double a, b, c;
         a = 1;
         b = p / 2;
         c = s;
 
-        double d = b * b - 4 * a * c;
+        double d = Math.pow(b,2) - 4 * a * c;
 
         if (d < 0)
             System.out.println("Error!");
