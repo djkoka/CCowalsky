@@ -6,6 +6,43 @@ package classwork;
 public class DataType {
 
     public static void main(String[] args) {
+
+        byte b = 120;
+        short s = b;
+        long l = s;
+
+        double d = l;
+
+        l = 15;
+        int maxValue = Integer.MAX_VALUE;
+        System.out.println("integer max value "+ maxValue);
+        long intmaxValue = maxValue;
+        long intOverflow = intmaxValue + 1;
+
+
+
+        int i = (int) intOverflow;
+        System.out.println(i);
+
+        d = Math.PI;
+        i = (int) d;
+        System.out.println(i);
+
+        i = (int) 3.9;
+        System.out.println(i);
+
+
+    }
+
+    private static void realNumberCarp() {
+        if (1.1 + 2.2 == 3.3){
+            System.out.println("they are ravnu");
+        } else {
+            System.out.println(" they are not ravno");
+        }
+    }
+
+    private static void primitiDataType() {
         int age = 23;
         int day = age * 365;
         int hours = day * 24;
@@ -34,14 +71,6 @@ public class DataType {
         char c = 'h';
 
         byte dfs = 125;
-
-
-
-
-
-
-
-
     }
 
 }

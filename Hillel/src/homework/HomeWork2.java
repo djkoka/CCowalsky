@@ -6,25 +6,26 @@ import java.util.Scanner;
 public class HomeWork2 {
 
     public static void main(String[] args) {
-
-        System.out.println("Please select program from list[1-3]: ");
-        System.out.println("1. Checking the number of the parity.");
-        System.out.println("2. Displaying near to ten of the two numbers.");
-        System.out.println("3. The sides of the rectangle.");
-        System.out.print("You select: ");
-        Scanner scanner = new Scanner(System.in);
-        int program = scanner.nextInt();
-        if (program == 1) {
-            testEvenNumber();
-            System.out.println('\n');
-        } else if (program == 2) {
-            soClose();
-            System.out.println('\n');
-        } else if (program == 3) {
-            rectangle();
-            System.out.println('\n');
-        } else {
-            System.out.println("Error select program.");
+        while (true) {
+            System.out.println("Please select program from list[1-3]: ");
+            System.out.println("1. Checking the number of the parity.");
+            System.out.println("2. Displaying near to ten of the two numbers.");
+            System.out.println("3. The sides of the rectangle.");
+            System.out.print("You select: ");
+            Scanner scanner = new Scanner(System.in);
+            int program = scanner.nextInt();
+            if (program == 1) {
+                testEvenNumber();
+                System.out.println('\n');
+            } else if (program == 2) {
+                soClose();
+                System.out.println('\n');
+            } else if (program == 3) {
+                rectangle();
+                System.out.println('\n');
+            } else {
+                System.out.println("Error select program.\n");
+            }
         }
 
     }
