@@ -15,7 +15,6 @@ public class Calculator {
                 double b = getB(scanner);
                 double result = (a + b);
                 System.out.println("Result: " + result);
-                
                 break;
             case "-":
                 b = getB(scanner);
