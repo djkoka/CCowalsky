@@ -5,11 +5,14 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
+
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter first number: ");
         double a = scanner.nextDouble();
         System.out.print("Enter operation[+,-,*,/,trunk,fract]: ");
         String op = scanner.next();
+
         switch (op) {
             case "+":
                 double b = getB(scanner);
@@ -64,9 +67,8 @@ public class Calculator {
         }else if (result >=Long.MIN_VALUE && result <=Long.MAX_VALUE){
             System.out.print(" long");
         }
-
-
-
+//     тут остановилься. сделай чтобы твой метод был не void а String
+//     и не печатал тип, а возвращал его
     }
 
     public static double getB(Scanner scanner) {
