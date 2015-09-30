@@ -10,25 +10,26 @@ public class Calculator {
         double a = scanner.nextDouble();
         System.out.print("Enter operation[+,-,*,/,trunk,fract]: ");
         String op = scanner.next();
-        switch (op){
+        switch (op) {
             case "+":
                 double b = getB(scanner);
-                double  result = (a+b);
+                double result = (a + b);
                 System.out.println("Result: " + result);
+                
                 break;
             case "-":
                 b = getB(scanner);
-                result = (a-b);
+                result = (a - b);
                 System.out.println("Result: " + result);
                 break;
             case "*":
                 b = getB(scanner);
-                result = (a*b);
+                result = (a * b);
                 System.out.println("Result: " + result);
                 break;
             case "/":
                 b = getB(scanner);
-                result = (a/b);
+                result = (a / b);
                 System.out.println("Result: " + result);
                 break;
             case "trunk":
@@ -37,7 +38,7 @@ public class Calculator {
                 break;
             case "fract":
                 trunk = (int) a;
-                float fract = (float) a- trunk;
+                float fract = (float) a - trunk;
                 System.out.println("Result: " + fract);
                 break;
             default:
@@ -50,6 +51,7 @@ public class Calculator {
         System.out.print("Enter second: ");
         return scanner.nextDouble();
     }
+
 }
 
 
