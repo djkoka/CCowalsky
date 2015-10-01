@@ -8,11 +8,28 @@ import java.util.Scanner;
 public class WorkflowControl {
     public static void main(String[] args) {
 
-
-
+        double d = 2.0;
+        inEven(d);
+        inEven((int)d,true);
 
 
     }
+
+    private static void notOperation() {
+        boolean todayIsthursday = true;
+        boolean iShouldStudyJava = true;
+        todayIsthursday = !(todayIsthursday && iShouldStudyJava);
+        boolean isEben = !isOdd(10);
+    }
+
+    public static boolean isOdd(int someNumber){
+        if (someNumber % 2 != 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    // ! <- logic no
 
     private static void ternaryExempl() {
         int number = 5;
@@ -22,13 +39,30 @@ public class WorkflowControl {
     }
 
     public static String inEven(int someNumber){
+        System.out.println("vasya bul zdesb int");
         if (someNumber % 2 == 0){
             return "Yes";
         } else {
             return "No";
         }
     }
+    public static boolean inEven(int someNumber, boolean someNumber1){
+        System.out.println("vasya bul zdesb int, double");
+        if (someNumber % 2 == 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
 
+    public static boolean inEven(double someNumber){
+        System.out.println("vasya bul zdesb double");
+        if (someNumber % 2 == 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     private static void mMoo() {
         String month = "mar";
