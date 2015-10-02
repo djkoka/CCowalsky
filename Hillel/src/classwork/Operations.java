@@ -38,6 +38,7 @@ public class Operations {
 
 
 //  || && короткая логика
+//  | & один работоет интов сравнивает в двоичном
         boolean hasEn = false;
         boolean canAttend = paid && hasEn;
 
