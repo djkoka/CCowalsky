@@ -1,5 +1,4 @@
-package homework;
-
+package homework.hw3;
 
 public class LuckyTicket {
     public static void main(String[] args) {
