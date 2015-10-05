@@ -5,11 +5,10 @@ import java.util.Scanner;
 
 public class GuessTheNumber {
     public static void main(String[] args) {
-        int randomNum = 0;
         int minimum = 1;
         int maximum = 1000;
         int tryAgain = 0;
-        randomNum = minimum + (int) (Math.random() * maximum);
+        int randomNum = minimum + (int) (Math.random() * maximum);
         while (true) {
             Scanner scanner = new Scanner(System.in);
             System.out.print("Enter number: ");
