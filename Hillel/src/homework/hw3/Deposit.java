@@ -14,6 +14,7 @@ public class Deposit {
         int month = enter.nextInt();
         int counter = 0;
         double amount = sum;
+        // for
         while (counter < month) {
             amount = amount * (0.03 / 12) + amount;
             counter++;
@@ -21,6 +22,7 @@ public class Deposit {
         System.out.printf("Amount will be %.2f after %d month\n", amount, month);
         amount = 0;
         month = 0;
+
         do {
             amount = sum * 0.03 / 12 + amount;
             month++;
