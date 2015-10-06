@@ -8,8 +8,9 @@ public class GuessTheNumber {
         int minimum = 1;
         int maximum = 1000;
         int tryAgain = 0;
+        boolean flag =true;
         int randomNum = minimum + (int) (Math.random() * maximum);
-        while (true) {
+        do {
             Scanner scanner = new Scanner(System.in);
             System.out.print("Enter number: ");
             int number = scanner.nextInt();
@@ -21,6 +22,6 @@ public class GuessTheNumber {
             } else System.out.println(" 6olbwe ");
             tryAgain++;
             System.out.println("Try: "+tryAgain);
-        }
+        }while (flag);
     }
 }

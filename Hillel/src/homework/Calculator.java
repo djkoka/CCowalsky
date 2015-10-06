@@ -18,26 +18,22 @@ public class Calculator {
             case "+":
                 double b = getB(scanner);
                 double result = (a + b);
-                System.out.print("Result: " + result);
-                dataType(result);
+                System.out.print("Result: " + result+dataType(result));
                 break;
             case "-":
                 b = getB(scanner);
                 result = (a - b);
-                System.out.print("Result: " + result);
-                dataType(result);
+                System.out.print("Result: " + result + dataType(result));
                 break;
             case "*":
                 b = getB(scanner);
                 result = (a * b);
-                System.out.print("Result: " + result);
-                dataType(result);
+                System.out.print("Result: " + result + dataType(result));
                 break;
             case "/":
                 b = getB(scanner);
                 result = (a / b);
-                System.out.println("Result: " + result);
-                dataType(result);
+                System.out.println("Result: " + result + dataType(result));
                 break;
             case "trunk":
                 int trunk = (int) a;
@@ -56,18 +52,18 @@ public class Calculator {
     }
 
 
-    public static void dataType(double result) {
+    public static String dataType(double result) {
         if (result - (int)result != 0){
-            System.out.println(" double");
+            return " double";
         }else if (result >= Byte.MIN_VALUE && result <= Byte.MAX_VALUE){
-            System.out.print(" byte");
+            return " byte";
         }else if (result >=Short.MIN_VALUE  && result <=Short.MAX_VALUE ){
-            System.out.print(" short");
+            return " short";
         }else if (result >=Integer.MIN_VALUE && result <= Integer.MAX_VALUE){
-            System.out.print(" integer");
+            return " integer";
         }else if (result >=Long.MIN_VALUE && result <=Long.MAX_VALUE){
-            System.out.print(" long");
-        }
+            return " long";
+        }return "";
     }
 
 
