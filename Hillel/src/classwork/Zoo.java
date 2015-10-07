@@ -12,14 +12,13 @@ public class Zoo {
             System.out.println("cat is predator");
         }
 
-        Cat tomCat = new Cat(true,3,"Tom","black");
+        Cat tomCat = new Cat(true, 3, "Tom", "black");
 
-        Cat murzik = new Cat(true,5,"Murzik","black");
+        Cat murzik = new Cat(true, 5, "Murzik", "black");
 
-        
 
         System.out.println(tomCat.name);
-        System.out.println(murzik.predator);
+        System.out.println(murzik.predator);//no good
         System.out.println(murzik.age);
     }
 }

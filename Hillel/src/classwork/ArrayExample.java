@@ -14,9 +14,9 @@ public class ArrayExample {
         }
 
         for (int i = 0; i < inArray.length; i++) {
-            System.out.println("first " +i+" volue "+ inArray[i]);
+            System.out.println("first " + i + " volue " + inArray[i]);
         }
-        for (int value: inArray){
+        for (int value : inArray) {
             System.out.println("value " + value);
         }
     }

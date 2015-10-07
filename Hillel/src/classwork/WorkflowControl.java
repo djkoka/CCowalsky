@@ -10,7 +10,7 @@ public class WorkflowControl {
 
         double d = 2.0;
         inEven(d);
-        inEven((int)d,true);
+        inEven((int) d, true);
 
 
     }
@@ -22,8 +22,8 @@ public class WorkflowControl {
         boolean isEben = !isOdd(10);
     }
 
-    public static boolean isOdd(int someNumber){
-        if (someNumber % 2 != 0){
+    public static boolean isOdd(int someNumber) {
+        if (someNumber % 2 != 0) {
             return true;
         } else {
             return false;
@@ -38,26 +38,27 @@ public class WorkflowControl {
         System.out.println(inEven);
     }
 
-    public static String inEven(int someNumber){
+    public static String inEven(int someNumber) {
         System.out.println("vasya bul zdesb int");
-        if (someNumber % 2 == 0){
+        if (someNumber % 2 == 0) {
             return "Yes";
         } else {
             return "No";
         }
     }
-    public static boolean inEven(int someNumber, boolean someNumber1){
+
+    public static boolean inEven(int someNumber, boolean someNumber1) {
         System.out.println("vasya bul zdesb int, double");
-        if (someNumber % 2 == 0){
+        if (someNumber % 2 == 0) {
             return true;
         } else {
             return false;
         }
     }
 
-    public static boolean inEven(double someNumber){
+    public static boolean inEven(double someNumber) {
         System.out.println("vasya bul zdesb double");
-        if (someNumber % 2 == 0){
+        if (someNumber % 2 == 0) {
             return true;
         } else {
             return false;

@@ -5,7 +5,7 @@ package homework;
  */
 public class AboutMyself {
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
         String firstName = "Constantin";
         String lastName = "Kowalsky";
@@ -21,7 +21,6 @@ public class AboutMyself {
         System.out.print(" ");
         System.out.println(lastName);
         System.out.println(age);
-
 
 
     }

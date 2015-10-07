@@ -12,11 +12,11 @@ public class Cat {
     String name;
     String color;
 
-    public Cat(){
+    public Cat() {
         System.out.println("in cat`s constructor");
     }
 
-    public Cat (boolean isPet, int isAge, String isName, String isColor) {
+    public Cat(boolean isPet, int isAge, String isName, String isColor) {
         this.pet = isPet;
         this.age = isAge;
         this.name = isName;

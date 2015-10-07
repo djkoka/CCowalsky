@@ -12,8 +12,8 @@ public class Loops {
     }
 
     private static void fOr() {
-        for (int i = 0; i<10; i++){
-            System.out.println("for loop "+ i);
+        for (int i = 0; i < 10; i++) {
+            System.out.println("for loop " + i);
         }
     }
 
@@ -24,7 +24,7 @@ public class Loops {
         do {
             System.out.println("Yes/No");
             yesNo = scanner.next();
-        }while (!(yesNo.equals("Yes")) || yesNo.equals("No"));
+        } while (!(yesNo.equals("Yes")) || yesNo.equals("No"));
     }
 
 
@@ -32,10 +32,10 @@ public class Loops {
         int money = 10000;
         int months = 0;
 
-        while (money<1500){
+        while (money < 1500) {
             money += 100;
             months++;
         }
-        System.out.println("money "+ money+" months "+months);
+        System.out.println("money " + money + " months " + months);
     }
 }

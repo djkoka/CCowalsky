@@ -12,16 +12,16 @@ public class Operations {
 
     }
 
-    public static boolean advert(){
+    public static boolean advert() {
         System.out.println("in advert method");
         return false;
     }
 
     public static void main(String[] args) {
-        int res = 5+89;
+        int res = 5 + 89;
 
-        res = res +1;
-        res +=1;
+        res = res + 1;
+        res += 1;
         res++;
         ++res;
 
@@ -29,8 +29,7 @@ public class Operations {
         print(++res);//префикс
 
 
-
-        int mod = 5%4;
+        int mod = 5 % 4;
 
         print(mod);
         boolean paid = true;
@@ -44,7 +43,7 @@ public class Operations {
 
         System.out.println(canAttend);
 
-        canAttend = paid()|advert();
+        canAttend = paid() | advert();
         System.out.println(canAttend);
 
         canAttend = paid() & advert();
@@ -58,19 +57,19 @@ public class Operations {
         int message = 100;
         int key = 31;
 
-        System.out.println("message "+ message);
+        System.out.println("message " + message);
         int crypto = message ^ key;
-        System.out.println("cryprto message "+crypto);
+        System.out.println("cryprto message " + crypto);
 
         int decrypto = crypto ^ key;
-        System.out.println("decrypto nessage " +decrypto);
+        System.out.println("decrypto nessage " + decrypto);
 
-        boolean priorities = paid()| advert() & hasEnogh();
-
+        boolean priorities = paid() | advert() & hasEnogh();
 
 
     }
-    public static boolean hasEnogh(){
+
+    public static boolean hasEnogh() {
         System.out.println("in hasEnoghmethod");
         return true;
 
