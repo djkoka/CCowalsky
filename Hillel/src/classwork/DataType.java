@@ -15,7 +15,7 @@ public class DataType {
 
         l = 15;
         int maxValue = Integer.MAX_VALUE;
-        System.out.println("integer max value "+ maxValue);
+        System.out.println("integer max value " + maxValue);
         long intmaxValue = maxValue;
         long intOverflow = intmaxValue + 1;
 
@@ -35,7 +35,7 @@ public class DataType {
     }
 
     private static void realNumberCarp() {
-        if (1.1 + 2.2 == 3.3){
+        if (1.1 + 2.2 == 3.3) {
             System.out.println("they are ravnu");
         } else {
             System.out.println(" they are not ravno");
@@ -48,10 +48,10 @@ public class DataType {
         int hours = day * 24;
         int secounds = hours * 3600;
         long milisec = secounds * 1000L;
-        long longSec = milisec/1000;
+        long longSec = milisec / 1000;
 
-        secounds =(int) longSec;
-        secounds =(int) (milisec /1000);
+        secounds = (int) longSec;
+        secounds = (int) (milisec / 1000);
 //      secounds =(int) milisec / 1000; ne pravelno
 
 

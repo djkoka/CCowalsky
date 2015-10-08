@@ -78,7 +78,7 @@ public class HomeWork2 {
         b = p / 2;
         c = s;
 
-        double d = Math.pow(b,2) - 4 * a * c;
+        double d = Math.pow(b, 2) - 4 * a * c;
 
         if (d < 0)
             System.out.println("Error!");

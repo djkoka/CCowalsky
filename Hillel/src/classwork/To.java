@@ -5,7 +5,7 @@ package classwork;
  */
 public class To {
 
-    public static void main (String[] args){
+    public static void main(String[] args) {
 
         sayHello();
 
@@ -43,20 +43,20 @@ public class To {
     }
 
     private static void print(int kAge) {
-        System.out.println ("I`m "+kAge+" age");
-        System.out.println ("31"+ 31);
-        System.out.println (31+ 31);
+        System.out.println("I`m " + kAge + " age");
+        System.out.println("31" + 31);
+        System.out.println(31 + 31);
     }
 
 
-    public static void sayHello(){
+    public static void sayHello() {
         String hm = "Hello world";
         System.out.println(hm);
 
     }
 
 
-    public static int calAge(){
+    public static int calAge() {
         final int birthYear = 1992;
 
         int year = 2015;
@@ -66,15 +66,13 @@ public class To {
     }
 
 
-    public static int calAge(int birthYear){
+    public static int calAge(int birthYear) {
 
         int year = 2015;
         int age = year - birthYear;
         return age;
 
     }
-
-
 
 
 }

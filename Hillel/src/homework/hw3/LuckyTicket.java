@@ -14,6 +14,6 @@ public class LuckyTicket {
                 counter++;
             }
         }
-        System.out.println("You need: " + counter+" gifts;");
+        System.out.println("You need: " + counter + " gifts;");
     }
 }
