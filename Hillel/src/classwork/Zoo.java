@@ -16,7 +16,7 @@ public class Zoo {
 
         Cat murzik = new Cat(true,5,"Murzik","black");
 
-        
+
 
         System.out.println(tomCat.name);
         System.out.println(murzik.predator);
