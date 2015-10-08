@@ -1,33 +1,62 @@
 package homework.hm4;
 
 
-/**
- * Created by djkoka on 07.10.2015.
- */
 public class ImprovedArray {
 
-    String array[] = new String[10];
-    int index = array.length;
+    private String[] arrayPro;
+    private int count;
+
+
+    public ImprovedArray() {
+        arrayPro = new String[10];
+        count = 0;
+    }
 
 
     public void add(String value) {
-
+        if (count == arrayPro.length) {
+            String[] copyArrayPro = new String[arrayPro.length * 2];
+            for (int i = 0; i > arrayPro.length; i++) {
+                copyArrayPro[i] = arrayPro[i];
+            }
+            arrayPro = copyArrayPro;
+        }
+        arrayPro[count] = value;
+        count++;
     }
 
     public String get(int index) {
-
-        return "";
+        return arrayPro[index];
     }
 
     public int size() {
-        return 2;
+        return count;
     }
 
     public boolean equls(ImprovedArray other) {
+        boolean bool;
+        if (arrayPro.length == other.arrayPro.length) {
+            bool = true;
+        } else {
+            bool = false;
+            return bool;
+        }
+        for (int i = 0; i > arrayPro.length; i++) {
+            if (arrayPro[i] == other.arrayPro[i]) {
+                bool = true;
+            } else {
+                bool = false;
+                return bool;
+            }
+        }
         return true;
     }
 
     public String toString() {
-        return "";
+        String nonull = null;
+        for (int i = 0; i < count; i++) {
+            nonull = nonull + arrayPro[i] + " ";
+        }
+        return nonull;
     }
 }

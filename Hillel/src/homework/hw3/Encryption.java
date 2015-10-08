@@ -7,12 +7,11 @@ import java.util.Scanner;
  */
 public class Encryption {
     public static void main(String[] args) {
-
-        Scanner in = new Scanner(System.in);
-
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter message");
-        String scr = in.nextLine();
+        String scr = scanner.next();
         char key = '@';
+
         String crypted = crypt(scr, key);
         System.out.println("Message crypted _" + crypted+"_");
 
@@ -29,3 +28,18 @@ public class Encryption {
         return crypted;
     }
 }
+
+/*
+Расширение задачи о шифровании.
+В качестве ключа для зашифровывания сообщения использовать не char а char[].
+При этом первый символ сообщения будет кодироваться первым символом ключа,
+второй символ сообщения - вторым символом ключа и т.д.
+Длинна ключа и длинна сообщения могут не совпадать. Если ключевые символы закончились - использовать их повторно.
+
+Создать отдельный класс - шифратор.
+Ключ шифратор получает через конструктор и хранит его. Обладает одним публичным методом:
+public String crypt(String message)
+
+Весь ввод-вывод не должен выходить за рамки main метода
+(в самом шифраторе не должно быть ни System.out ни Scanner).
+*/
