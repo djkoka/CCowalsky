@@ -5,6 +5,7 @@ public class ImprovedArray {
 
     private String[] arrayPro;
     private int count;
+    private int index;
 
 
     public ImprovedArray() {
@@ -58,5 +59,15 @@ public class ImprovedArray {
             nonull = nonull + arrayPro[i] + " ";
         }
         return nonull;
+    }
+    public boolean contains(Object obj){
+
+        return true;
+    }
+    public void remove(int index){
+
+    }
+    public void remove(Object obj){
+
     }
 }
