@@ -4,6 +4,7 @@ package homework.hw3;
 import java.util.Scanner;
 
 public class GuessTheNumber {
+
     public static void main(String[] args) {
         int minimum = 1;
         int maximum = 1000;
