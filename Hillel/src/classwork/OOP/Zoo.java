@@ -9,7 +9,7 @@ public class Zoo {
         String sound = tomCat1.makeSound();
         System.out.println(sound);
 
-        Animal animal = new Animal();
+        //Animal animal = new Animal();
         Cat cat = new Cat();
         Animal animalCat = new Cat();
         sound = animalCat.makeSound();
@@ -22,6 +22,15 @@ public class Zoo {
         Object cat2 = new Cat(true,3,"","");
 
         System.out.println("polymorphic equals: " + cat1.equals(cat2));
+
+        Object[] objects = new Object[10];
+        objects[1] = "some string";
+        objects[2] = new Cat(true,3,"a", "2");
+        objects[3] = System.in;
+
+        for (Object o: objects){
+
+        }
 
 
     }

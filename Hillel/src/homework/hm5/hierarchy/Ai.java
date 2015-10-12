@@ -1,4 +1,4 @@
-package homework.hm5;
+package homework.hm5.hierarchy;
 
 import java.util.Scanner;
 

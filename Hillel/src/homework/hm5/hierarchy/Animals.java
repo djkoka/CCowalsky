@@ -1,4 +1,4 @@
-package homework.hm5;
+package homework.hm5.hierarchy;
 
 public class Animals {
     int id;// (у всех животных)
