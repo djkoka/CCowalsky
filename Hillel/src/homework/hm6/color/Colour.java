@@ -1,4 +1,4 @@
-package homework.hm6.Colors;
+package homework.hm6.color;
 
 /**
  * Created by djkoka on 14.10.2015.
