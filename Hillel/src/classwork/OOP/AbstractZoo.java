@@ -13,7 +13,12 @@ public class AbstractZoo {
         System.out.println(cat);
         System.out.println(dog);
 
+        Emplayce employee = new Emplayce();
+      //  vaccinete(employee);
 
+        System.out.println(cat);
+        System.out.println(dog.toString());
+        System.out.println(employee);
 
         System.out.println(cat.makeSound());
         System.out.println(dog.makeSound());

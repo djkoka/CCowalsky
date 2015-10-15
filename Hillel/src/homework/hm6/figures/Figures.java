@@ -10,7 +10,9 @@ public abstract class Figures {
     public static void main(String[] args) {
         Figures figures = new Circle(4);
         double s = figures.Square();
-        System.out.println(s);
+        System.out.format("%.2f\n",s);
+        s= figures.Perimetr();
+        System.out.format("%.2f\n",s);
     }
 
 }
