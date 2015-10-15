@@ -11,7 +11,20 @@ public class Zoo {
 
         //Animal animal = new Animal();
         Cat cat = new Cat();
-        Animal animalCat = new Cat();
+
+        Animal anotherAnimal = new Cat();
+        System.out.println(anotherAnimal.someField);
+        System.out.println(anotherAnimal.getSomeField());
+
+        System.out.println(anotherAnimal.getTypeName());
+
+        //trash();
+
+
+    }
+
+    private static void trash() {
+        String sound;Animal animalCat = new Cat();
         sound = animalCat.makeSound();
         System.out.println("cat as animal " + sound);
 
@@ -31,8 +44,6 @@ public class Zoo {
         for (Object o: objects){
 
         }
-
-
     }
 
 
@@ -65,8 +76,8 @@ public class Zoo {
         Cat murzik = new Cat(true,5,"Murzik","black");
 
 
-        System.out.println(tomCat.name);
+        System.out.println(tomCat.getName());
         System.out.println(murzik.predator);
-        System.out.println(murzik.age);
+        System.out.println(murzik.getAge());
     }
 }

@@ -6,24 +6,24 @@ package classwork.OOP;
 public class AbstractZoo {
     public static void main(String[] args) {
         Animal cat =new Cat();
-        Animal dog = new Dog();
+  //      Animal dog = new Dog();
 
         vaccinete(cat);
-        vaccinete(dog);
+    //    vaccinete(dog);
         System.out.println(cat);
-        System.out.println(dog);
+      //  System.out.println(dog);
 
         Emplayce employee = new Emplayce();
       //  vaccinete(employee);
 
         System.out.println(cat);
-        System.out.println(dog.toString());
+        //System.out.println(dog.toString());
         System.out.println(employee);
 
         System.out.println(cat.makeSound());
-        System.out.println(dog.makeSound());
+        //System.out.println(dog.makeSound());
         printSound(new Cat());
-        printSound(new Dog());
+        //printSound(new Dog());
 
 
     }

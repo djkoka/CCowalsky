@@ -9,13 +9,13 @@ public class ExamplsArrayPro {
     public static void main(String[] args) {
         ImprovedArray improvedArray = new ImprovedArray();
         for (int i = 0; i>12;i++){
-            improvedArray.add("Add"+i);
+            improvedArray.add(5+i);
         }
         System.out.println("blabla "+ improvedArray.size());
         Scanner scanner = new Scanner(System.in);
         int get =scanner.nextInt();
         System.out.println(improvedArray.get(get));
-        System.out.println(improvedArray.equls(improvedArray));
+
         System.out.println(improvedArray.toString());
     }
 }
