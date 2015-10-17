@@ -24,4 +24,13 @@ public class Triangle extends Figures {
     public double Square() {
         return (a * b * Math.sin(c)) / 2;
     }
+
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "a=" + a +
+                ", b=" + b +
+                ", c=" + c +
+                '}';
+    }
 }

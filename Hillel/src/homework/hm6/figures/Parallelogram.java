@@ -23,4 +23,13 @@ public class Parallelogram extends Figures {
     public double Square() {
         return a*h;
     }
+
+    @Override
+    public String toString() {
+        return "Parallelogram{" +
+                "a=" + a +
+                ", b=" + b +
+                ", h=" + h +
+                '}';
+    }
 }

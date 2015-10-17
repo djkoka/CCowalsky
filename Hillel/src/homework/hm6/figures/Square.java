@@ -21,4 +21,11 @@ public class Square extends Figures {
     public double Square() {
         return Math.pow(h, 2);
     }
+
+    @Override
+    public String toString() {
+        return "Square{" +
+                "h=" + h +
+                '}';
+    }
 }

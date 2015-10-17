@@ -21,4 +21,12 @@ public class Rectangle extends Figures {
     public double Perimetr() {
         return 2 * (a + b);
     }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "a=" + a +
+                ", b=" + b +
+                '}';
+    }
 }

@@ -20,4 +20,11 @@ public class Circle extends Figures {
     public double Perimetr() {
         return (Math.PI*2)*r;
     }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "r=" + r +
+                '}';
+    }
 }
