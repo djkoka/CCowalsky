@@ -8,15 +8,10 @@ import java.util.Scanner;
 public class Crypt {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter message:");
-        String scr = scanner.next();
-        System.out.println("Enter key:");
-        String key = scanner.next();
-        Crypted coding = new Crypted(key);
-        String cryptMessage = coding.crypt(scr);
-        System.out.println(cryptMessage);
-        String encrypt = cryptMessage;
-        encrypt = coding.crypt(encrypt);
-        System.out.println(encrypt);
+        System.out.println("Enter key and message:");
+        Scrambler scram = new Scrambler(scanner.next(),scanner.next() );
+        System.out.println("Crypted message: " + scram.crypt());
+        System.out.println("Decrypted message " + scram.crypt());
+
     }
 }
