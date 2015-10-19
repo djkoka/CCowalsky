@@ -3,7 +3,7 @@ package classwork.OOP;
 /**
  * Created by CCowalsky on 05.10.2015.
  */
-public class Cat extends Animal{
+public class Cat extends Animal implements Comparable<Cat>{
     public static final boolean domestic = true;
     public static final boolean predator = true;
 
@@ -56,12 +56,9 @@ public class Cat extends Animal{
         return someField;
     }
 
-//this указать экзе
-/*    public void init (boolean isPet, int isAge, String isName, String isColor){
-        this.pet = isPet;
-        this.age = isAge;
-        this.name = isName;
-        this.color = isColor;
-    }*/
 
+    @Override
+    public int compareTo(Cat o) {
+        return this.getName().compareTo(o.getName());
+    }
 }
