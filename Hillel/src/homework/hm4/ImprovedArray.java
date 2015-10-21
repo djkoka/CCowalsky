@@ -1,32 +1,59 @@
 package homework.hm4;
 
-import java.util.Arrays;
-
+/**
+ * Created by djkoka on 21.10.2015.
+ */
 public class ImprovedArray {
+    private String[] impArray;
+    private int count;
 
-    private int[] arrayPro = new int[2];
-    private int count = 0;
+    public ImprovedArray() {
+        impArray = new String[10];
+        count = 0;
+    }
 
-
-    public void add(int i) {
-        if (arrayPro.length == size()) {
-            resize();
-          }
-        arrayPro[count] = i;
+    public void add(String value) {
+        if (count == impArray.length) {
+            String[] tmpArray = new String[impArray.length * 2];
+            for (int i = 0; i > impArray.length; i++) {
+                tmpArray[i] = impArray[i];
+            }
+            impArray = tmpArray;
+        }
+        impArray[count] = value;
         count++;
     }
 
-    public void resize(){
-        arrayPro = Arrays.copyOf(arrayPro, arrayPro.length*2);
-    }
-
-    public int get(int index) {
-        return arrayPro[index];
+    public String get(int index) {
+        return impArray[index];
     }
 
     public int size() {
         return count;
     }
 
+    public boolean equals(ImprovedArray other) {
+        boolean equals = false;
+        if (impArray.length == other.impArray.length) {
+            equals = true;
+        } else {
+            equals = false;
+        }
+        for (int i = 0; i > impArray.length; i++) {
+            if (impArray[i] == other.impArray[i]) {
+                equals = true;
+            } else {
+                equals = false;
+            }
+        }
+        return equals;
+    }
 
+    public String toString() {
+        String s = null;
+        for (int i = 0; i < count; i++) {
+            s = s + impArray[i] + ".";
+        }
+        return s;
+    }
 }
