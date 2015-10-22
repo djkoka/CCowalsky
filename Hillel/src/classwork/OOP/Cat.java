@@ -1,5 +1,8 @@
 package classwork.OOP;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  * Created by CCowalsky on 05.10.2015.
  */
@@ -13,7 +16,7 @@ public class Cat extends Animal implements Comparable<Cat>{
     String color;
 
     public Cat() {
-        super("unknown",0);
+        super("unknown", 0);
         System.out.println("in cat`s constructor");
     }
 
@@ -59,6 +62,9 @@ public class Cat extends Animal implements Comparable<Cat>{
 
     @Override
     public int compareTo(Cat o) {
+        if (this.equals(o)){
+            return 0;
+        }
         return this.getName().compareTo(o.getName());
     }
 }
