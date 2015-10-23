@@ -18,6 +18,7 @@ public class SumNum {
         floats[3] = 4.6f;
         double res = 0;
 
+        
         for (int i = 0; i < floats.length; i++){
             res +=floats[i];
         }
