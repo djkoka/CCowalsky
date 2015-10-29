@@ -5,14 +5,13 @@ package classwork.patterns.ducks;
  */
 public class Decoy extends Duck {
 
+    public Decoy(){
+        flyBehavior = new FlyNoWay();
+        quackBehavior = new Quack();
+    }
+
     @Override
     public String display() {
         return "Decoy";
     }
-
-    @Override
-    public String fly() {
-        return "fly no way";
-    }
-
 }

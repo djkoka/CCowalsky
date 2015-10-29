@@ -55,9 +55,9 @@ public abstract class Animal implements Vaccinable {
 
     public String toString() {
 
-        String result = "name='" + name;
-        result+="age=" + age;
-        result+="vaccines=" + Arrays.toString(vaccines);
+        String result = "name: " + name;
+        result+=" age: " + age;
+        result+=" vaccines: " + Arrays.toString(vaccines);
 
 
         return result;

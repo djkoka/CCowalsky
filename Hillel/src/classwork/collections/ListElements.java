@@ -4,10 +4,10 @@ package classwork.collections;
  * Created by CCowalsky on 26.10.2015.
  */
 public class ListElements {
-    Object value;
-    ListElements next;
+    public Object value;
+    public ListElements next;
 
-    public ListElements(Object value) {
+    public ListElements(Object value) { this.value = value;
 
     }
 

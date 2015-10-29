@@ -5,6 +5,12 @@ package classwork.patterns.ducks;
  */
 public class RedheadDuck extends Duck{
 
+    public RedheadDuck(){
+        flyBehavior = new Fly();
+        quackBehavior = new Quack();
+    }
+
+
     @Override
     public String display(){
         return "redhead";

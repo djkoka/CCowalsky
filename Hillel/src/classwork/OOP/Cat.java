@@ -39,8 +39,8 @@ public class Cat extends Animal implements Comparable<Cat>{
     public String toString() {
         String result = super.toString();
         result +="Cat{" +
-                "pet=" + pet +
-                ", color='" + color + '\'' +
+                "pet: " + pet +
+                ", color: '" + color + '\'' +
                 '}';
         return result;
     }

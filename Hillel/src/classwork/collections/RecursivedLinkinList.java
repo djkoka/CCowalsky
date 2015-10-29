@@ -1,9 +1,11 @@
 package classwork.collections;
 
+import java.util.Iterator;
+
 /**
  * Created by CCowalsky on 26.10.2015.
  */
-public class RecursivedLinkinList {
+public class RecursivedLinkinList implements Iterable{
 
     private ListElements head;
 
@@ -30,5 +32,14 @@ public class RecursivedLinkinList {
         } else {
             return head.get(index);
         }
+    }
+
+    public ListElements getHead() {
+        return head;
+    }
+
+    @Override
+    public Iterator iterator() {
+        return new LinkinListEterator(this);
     }
 }

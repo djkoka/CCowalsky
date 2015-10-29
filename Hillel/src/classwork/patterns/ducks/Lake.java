@@ -5,9 +5,16 @@ package classwork.patterns.ducks;
  */
 public class Lake {
     public static void main(String[] args) {
-        Duck duck = new RubberDuck();
+        Duck pilot = new RubberDuck();
+        pilot.flyBehavior = new Jet();
+        //test(pilot)
+    }
+
+/*    private static Duck test() {
+        Duck duck = ();
         System.out.println(duck.quack());
         System.out.println(duck.fly());
         System.out.println(duck.display());
-    }
+        return duck;
+    }*/
 }

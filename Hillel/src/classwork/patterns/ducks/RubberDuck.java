@@ -5,18 +5,13 @@ package classwork.patterns.ducks;
  */
 public class RubberDuck extends Duck {
 
+    public RubberDuck() {
+        flyBehavior = new FlyNoWay();
+        quackBehavior = new Quick();
+    }
+
     @Override
     public String display() {
         return "Rubber Duck";
-    }
-
-    @Override
-    public String fly() {
-        return "fly no way";
-    }
-
-    @Override
-    public String quack() {
-        return "quack";
     }
 }
