@@ -1,31 +1,37 @@
 package classwork.patterns.Observer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by CCowalsky on 05.11.2015.
  */
 public class WeatherStation {
-    int temperature;
-    int humdity;
-    int pressure;
+    private int temperature;
+    private int humidity;
+    private int pressure;
 
-    WeatherDisplay carrent = new WeatherDisplay();
-    WeatherStatistic statistic = new WeatherStatistic();
+    List<WeatherObserver> observers = new ArrayList<>();
 
     public void measuremenChanged(){
 
-        carrent.set(temperature, humdity, pressure);
-        carrent.display();
-
-        statistic.set(temperature,humdity,pressure);
-        statistic.display();
+        for (WeatherObserver observer: observers){
+            observer.updateWeather(this);
+        }
+    }
+    public void register(WeatherObserver observer){
+        observers.add(observer);
+    }
+    public void removeObs(WeatherObserver observer){
+        observers.remove(observer);
     }
 
     public int getTemperature() {
         return temperature;
     }
 
-    public int getHumdity() {
-        return humdity;
+    public int getHumidity() {
+        return humidity;
     }
 
     public int getPressure() {
@@ -36,8 +42,8 @@ public class WeatherStation {
         this.temperature = temperature;
     }
 
-    public void setHumdity(int humdity) {
-        this.humdity = humdity;
+    public void setHumidity(int humidity) {
+        this.humidity = humidity;
     }
 
     public void setPressure(int pressure) {
