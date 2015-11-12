@@ -106,7 +106,7 @@
         </constraints>
         <properties/>
       </component>
-      <component id="bbcd0" class="javax.swing.JButton" binding="plusbutton">
+      <component id="bbcd0" class="javax.swing.JButton" binding="plusButton">
         <constraints>
           <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
@@ -115,7 +115,7 @@
           <text value="+"/>
         </properties>
       </component>
-      <component id="c5d67" class="javax.swing.JButton" binding="exitbutton">
+      <component id="c5d67" class="javax.swing.JButton" binding="exitButton">
         <constraints>
           <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <gridbag weightx="1.0" weighty="1.0"/>
@@ -124,7 +124,7 @@
           <text value="Exit"/>
         </properties>
       </component>
-      <component id="d05f8" class="javax.swing.JButton" binding="equalbutton">
+      <component id="d05f8" class="javax.swing.JButton" binding="equalButton">
         <constraints>
           <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>

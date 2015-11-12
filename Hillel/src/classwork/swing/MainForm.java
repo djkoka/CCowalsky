@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
  */
 public class MainForm extends JFrame {
     private JPanel panel1;
-    private JButton exitbutton;
+    private JButton exitButton;
     private JButton a0Button;
     private JButton a1Button;
     private JButton a2Button;
@@ -21,17 +21,18 @@ public class MainForm extends JFrame {
     private JButton a8Button;
     private JButton a9Button;
     private JTextField textField1;
-    private JButton plusbutton;
-    private JButton equalbutton;
+    private JButton plusButton;
+    private JButton equalButton;
 
-    public MainForm (){
+    public MainForm(){
         setContentPane(panel1);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         pack();
         setVisible(true);
-        exitbutton.addActionListener(new QuitAction());
-        ActionListener keyListener = new CalcularListener(textField1);
+        exitButton.addActionListener(new QuitAction());
 
+
+        ActionListener keyListener = new CalculusListener(textField1);
         a0Button.addActionListener(keyListener);
         a1Button.addActionListener(keyListener);
         a2Button.addActionListener(keyListener);
@@ -42,21 +43,21 @@ public class MainForm extends JFrame {
         a7Button.addActionListener(keyListener);
         a8Button.addActionListener(keyListener);
         a9Button.addActionListener(keyListener);
-        plusbutton.addActionListener(keyListener);
-        equalbutton.addActionListener(keyListener);
+        plusButton.addActionListener(keyListener);
+        equalButton.addActionListener(keyListener);
 
-        a0Button.getActionCommand();
-        a1Button.getActionCommand();
-        a2Button.getActionCommand();
-        a3Button.getActionCommand();
-        a4Button.getActionCommand();
-        a5Button.getActionCommand();
-        a6Button.getActionCommand();
-        a7Button.getActionCommand();
-        a8Button.getActionCommand();
-        a9Button.getActionCommand();
-        plusbutton.getActionCommand();
-        equalbutton.getActionCommand();
+        a0Button.setActionCommand("0");
+        a1Button.setActionCommand("1");
+        a2Button.setActionCommand("2");
+        a3Button.setActionCommand("3");
+        a4Button.setActionCommand("4");
+        a5Button.setActionCommand("5");
+        a6Button.setActionCommand("6");
+        a7Button.setActionCommand("7");
+        a8Button.setActionCommand("8");
+        a9Button.setActionCommand("9");
+        plusButton.setActionCommand("+");
+        equalButton.setActionCommand("=");
         }
 
     public static void main(String[] args) {

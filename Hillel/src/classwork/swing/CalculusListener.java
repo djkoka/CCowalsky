@@ -7,12 +7,12 @@ import java.awt.event.ActionListener;
 /**
  * Created by CCowalsky on 09.11.2015.
  */
-public class CalcularListener implements ActionListener {
+public class CalculusListener implements ActionListener {
 
     private JTextField textField;
-    private int firstOperant;
+    private int firstOperand;
 
-    public CalcularListener (JTextField textField){
+    public CalculusListener(JTextField textField){
         this.textField= textField;
     }
 
@@ -23,13 +23,13 @@ public class CalcularListener implements ActionListener {
 
         switch (buttonPressed){
             case "+":
-                firstOperant=Integer.parseInt(textField.getText());
-                textField.setText(" ");
+                firstOperand =Integer.parseInt(textField.getText());
+                textField.setText("");
                 break;
             case "=":
-                Integer secoundOperant = Integer.parseInt(textField.getText());
-                secoundOperant+=firstOperant;
-                textField.setText(secoundOperant.toString());
+                Integer secondOperand = Integer.parseInt(textField.getText());
+                secondOperand+= firstOperand;
+                textField.setText(secondOperand.toString());
                 break;
             default:
                 textField.setText(textField.getText()+buttonPressed);
