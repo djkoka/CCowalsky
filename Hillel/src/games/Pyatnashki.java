@@ -1,3 +1,5 @@
+package games;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -11,7 +13,7 @@ public class Pyatnashki extends JFrame {
     private int[][] numbers = new int[4][4];
 
     public Pyatnashki() {
-        super("Pyatnashki");
+        super("games.Pyatnashki");
         setBounds(200, 200, 300, 300);
         setResizable(false);
         createMenu();
