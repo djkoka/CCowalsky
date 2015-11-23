@@ -1,29 +1,31 @@
 package homework.destopgame;
 
-import homework.destopgame.Elf.ElfArcher;
-import homework.destopgame.Elf.ElfMage;
-import homework.destopgame.Elf.ElfWarrion;
-import homework.destopgame.interfaces.Archer;
-import homework.destopgame.interfaces.Mage;
-import homework.destopgame.interfaces.Warrior;
+
+import homework.destopgame.interfaces.Bow;
+import homework.destopgame.interfaces.Hammer;
+import homework.destopgame.interfaces.Sword;
 
 /**
  * Created by djkoka on 04.11.2015.
  */
 public class ElfSquadronFactory extends SquadronFactory {
 
-
-
     @Override
-    public Mage createMage() {
-        return new ElfMage();
+    public Sword createSword() {
+        return null;
     }
+
     @Override
-    public Archer createArcher() {
-        return new ElfArcher();
+    public Bow createBow() {
+        return null;
     }
+
     @Override
-    public Warrior createWarrior() {
-        return new ElfWarrion();
+    public Hammer createHammer() {
+        return null;
     }
 }
+
+
+
+
