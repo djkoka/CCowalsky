@@ -5,15 +5,15 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
 
-public class Pyatnashki extends JFrame {
+public class Fifteen extends JFrame {
     private JPanel panel = new JPanel(new GridLayout(4, 4, 2, 2));
     private JMenuBar menu = null;
     private final String fileItems[] = new String []{"New", "Exit"};
     private static Random generator = new Random();
     private int[][] numbers = new int[4][4];
 
-    public Pyatnashki() {
-        super("games.Pyatnashki");
+    public Fifteen() {
+        super("Fifteen");
         setBounds(200, 200, 300, 300);
         setResizable(false);
         createMenu();
@@ -190,7 +190,7 @@ public class Pyatnashki extends JFrame {
     }
 
     public static void main(String[] args) {
-        JFrame app = new Pyatnashki();
+        JFrame app = new Fifteen();
         app.setVisible(true);
     }
 }
