@@ -1,15 +1,13 @@
 package classwork.generics;
 
-import classwork.OOP.Emplayce;
-
 /**
  * Created by CCowalsky on 03.12.2015.
  */
-public class Manager extends Emplayee {
+public class Manager extends Employee {
 
 
-    public void fire(Emplayee emplayee){
-        System.out.println(emplayee.getSalary()+"  ");
+    public void fire(Employee employee){
+        System.out.println(employee.getSalary()+"  ");
     }
 
     public Manager(String name, int salary) {
