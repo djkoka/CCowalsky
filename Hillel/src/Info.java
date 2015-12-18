@@ -5,5 +5,7 @@ public class Info {
     /*
     sout- System.out.println
     iter- forEch
+
+    http://habrahabr.ru/company/luxoft/blog/157273/
     */
 }
