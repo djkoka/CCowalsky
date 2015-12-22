@@ -21,8 +21,18 @@ public class ProductDbDAO implements ProductDAO {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } finally {
-
+            //
         }
+        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }));
     }
 
     @Override
@@ -121,4 +131,17 @@ public class ProductDbDAO implements ProductDAO {
             //
         }
     }
+
+/*    public void close(){
+        try {
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        connection.close();
+    }*/
 }
