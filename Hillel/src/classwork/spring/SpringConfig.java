@@ -1,5 +1,6 @@
 package classwork.spring;
 
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -10,9 +11,13 @@ import org.springframework.context.annotation.Configuration;
 public class SpringConfig {
 
     @Bean
-    public DamselRescuingKnight knight(){
+    public DamselRescuingKnight knight() {
         DamselRescuingKnight knight = new DamselRescuingKnight();
-        knight.setQuest(new DamselRescuingQuest());
         return knight;
+    }
+
+    @Bean
+    public DamselRescuingQuest quest(){
+        return new DamselRescuingQuest();
     }
 }
