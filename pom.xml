@@ -1,5 +1,5 @@
 <project>
-    <artifactId>java-courses</artifactId>
+    <artifactId>Hillel</artifactId>
     <groupId>com.hillel</groupId>
     <version>0.1</version>
 
@@ -21,13 +21,19 @@
             <artifactId>spring-context</artifactId>
             <version>4.2.4.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>4.2.4.RELEASE</version>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>(whatever version is current)</version>
+                <version>3.3</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>

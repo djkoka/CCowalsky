@@ -1,5 +1,7 @@
 package classwork.spring;
 
+
+import classwork.spring.soundSystem.CdPlayer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -10,8 +12,10 @@ public class SpringMain {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
 
-        DamselRescuingKnight knight = context.getBean(DamselRescuingKnight.class);
+       // DamselRescuingKnight knight = context.getBean(DamselRescuingKnight.class);
 
-        knight.embarkQuest();
+      // knight.embarkQuest();
+
+        context.getBean(CdPlayer.class).play();
     }
 }

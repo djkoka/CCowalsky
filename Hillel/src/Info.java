@@ -6,6 +6,8 @@ public class Info {
     sout- System.out.println
     iter- forEch
 
+    reflecsiya
+
     http://habrahabr.ru/company/luxoft/blog/157273/
     */
 }

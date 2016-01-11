@@ -1,4 +1,5 @@
-package classwork.spring;
+package classwork.spring.medieval;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -13,7 +14,10 @@ public class DamselRescuingKnight {
         this.quest = quest;
     }
 
-    public void embarkQuest(){
-        quest.embark();
+    public void embarkQuest(){ quest.embark();  }
+
+    @Deprecated
+    public void deprecatedMethod(){
+        System.out.println("deprecated");
     }
 }
