@@ -1,8 +1,10 @@
 package classwork.java8features;
 
-import java.util.*;
-import java.util.function.Predicate;
-import java.util.stream.Collector;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import java.util.function.*;
 import java.util.stream.Collectors;
 
 /**
@@ -10,6 +12,40 @@ import java.util.stream.Collectors;
  */
 public class Java8Main {
     public static void main(String[] args) {
+
+
+    }
+
+    private static void functionEx() {
+        List<Apple> apples = (createApple(10, (Supplier<Apple>) Apple::new));
+
+        consumeApples(apples, new Consumer<Apple>() {
+            @Override
+            public void accept(Apple apple) {
+                System.out.println(apple);
+            }
+        });
+
+        consumeApples(apples, System.out::println);
+
+        System.out.println(mapToString(apples, Apple::getColors));
+    }
+
+    public static List<String> mapToString(List<Apple> apples, Function<Apple,String> mapper){
+        List<String> strings = new ArrayList<>();
+        for (Apple apple: apples){
+            strings.add(mapper.apply(apple));
+        }
+        return strings;
+    }
+
+    public static void consumeApples(List<Apple> apples, Consumer<Apple> consumer){
+        for (Apple apple : apples){
+            consumer.accept(apple);
+        }
+    }
+
+    private static void stremEXp() {
         List<Apple> apples = new ArrayList<>();
         apples.add(new Apple("red", 140));
         apples.add(new Apple("green", 160));
@@ -29,15 +65,40 @@ public class Java8Main {
 
         List<Apple> redandheavyapple = filter(apples, Java8Main::isHeavy);
         redandheavyapple = filter(apples, apple -> apple.getWeight() > 170);
+        Predicate<Apple> isHeavy = Java8Main::isHeavy;
+        Predicate<Apple> isGreen = apple -> apple.getColors().equals("red");
+        Predicate<Apple> isHeavyandisGreen = isGreen.and(isHeavy);
+
+
 
         redandheavyapple = apples
                 .stream()
-                .filter(Java8Main::isHeavy/* apple -> apple.getWeight() > 170 */)
-                .filter(apple -> apple.getColors().equals("red"))
+                .filter(isHeavyandisGreen)
                 .collect(Collectors.toList());
 
-        System.out.println(redandheavyapple);
+        List<String> colors = apples.stream()
+                .map(Apple::getColors)
+                .collect(Collectors.toList());
 
+        System.out.println();
+
+        System.out.println(redandheavyapple);
+    }
+
+    public static List<Apple> createApple(int count, BiFunction<String, Integer, Apple> appleBiFunction) {
+        List<Apple> apples = new ArrayList<>();
+        for (int i = 0; i < count; i++) {
+            apples.add(appleBiFunction.apply("Red", 50));
+        }
+        return apples;
+    }
+
+    public static List<Apple> createApple(int count, Supplier<Apple> appleSupplier) {
+        List<Apple> apples = new ArrayList<>();
+        for (int i = 0; i < count; i++) {
+            apples.add(appleSupplier.get());
+        }
+        return apples;
     }
 
     private static boolean isHeavy(Apple apple) {
