@@ -78,6 +78,9 @@ public class Java8Main {
 
         List<String> colors = apples.stream()
                 .map(Apple::getColors)
+                //.limit(2)
+                .distinct()
+                .sorted()
                 .collect(Collectors.toList());
 
         System.out.println();
