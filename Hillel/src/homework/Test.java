@@ -6,11 +6,12 @@ import classwork.OOP.Emplayce;
 import classwork.OOP.Human;
 import homework.hm5.hierarchy.ObjectArray;
 
+import java.util.*;
+
 public class Test {
 
 
     public static int min(int a, int b, int c) {
-        //напишите тут ваш код
         int min = 0;
         if (a < b & a < c) {
             min = a;
@@ -71,5 +72,6 @@ public class Test {
         System.out.println(oa.size());
         System.out.println(oa2.size());
         System.out.println(oa.equals(oa2));
+
+        }
     }
-}
